@@ -1,0 +1,58 @@
+﻿@page
+@model Worklog.Pages.Worklogs.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Log</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Log.LogDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Log.LogDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Log.TimeSpent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Log.TimeSpent)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Log.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Log.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Log.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Log.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Log.Project)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Log.Project.ProjectName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Log.WorkTask)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Log.WorkTask.TaskName)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Log.LogID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

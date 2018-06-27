@@ -1,0 +1,57 @@
+﻿@page
+@model Worklog.Pages.Worklogs.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Log</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Log.ProjectID" class="control-label"></label>
+                <select asp-for="Log.ProjectID" class ="form-control" asp-items="ViewBag.ProjectID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Log.WorkTaskID" class="control-label"></label>
+                <select asp-for="Log.WorkTaskID" class ="form-control" asp-items="ViewBag.WorkTaskID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Log.LogDate" class="control-label"></label>
+                <input asp-for="Log.LogDate" class="form-control" />
+                <span asp-validation-for="Log.LogDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Log.TimeSpent" class="control-label"></label>
+                <input asp-for="Log.TimeSpent" class="form-control" />
+                <span asp-validation-for="Log.TimeSpent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Log.Title" class="control-label"></label>
+                <input asp-for="Log.Title" class="form-control" />
+                <span asp-validation-for="Log.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Log.Description" class="control-label"></label>
+                <input asp-for="Log.Description" class="form-control" />
+                <span asp-validation-for="Log.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
