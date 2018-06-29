@@ -13,6 +13,6 @@ namespace Worklog.Models
 		[StringLength(60, MinimumLength = 3), Required]
 		public string TaskName { get; set; }
 
-		ICollection<Log> Worklogs { get; set; }
+		ICollection<Log> Worklog { get; set; }
 	}
 }

@@ -34,3 +34,13 @@ C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\
 C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Worklogs\Details.g.cshtml.cs
 C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Worklogs\Edit.g.cshtml.cs
 C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Worklogs\Index.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Projects\Create.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Projects\Delete.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Projects\Details.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Projects\Edit.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Projects\Index.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Tasks\Create.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Tasks\Delete.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Tasks\Details.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Tasks\Edit.g.cshtml.cs
+C:\Users\danie\source\repos\Worklog\Worklog\obj\Debug\netcoreapp2.1\Razor\Pages\Tasks\Index.g.cshtml.cs

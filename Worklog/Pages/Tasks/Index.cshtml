@@ -1,0 +1,36 @@
+﻿@page
+@model Worklog.Pages.Tasks.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkTask[0].TaskName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.WorkTask) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.WorkTaskID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.WorkTaskID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.WorkTaskID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
