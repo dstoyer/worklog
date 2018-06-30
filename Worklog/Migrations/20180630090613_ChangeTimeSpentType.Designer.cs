@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Worklog.Models;
 
 namespace Worklog.Migrations
 {
     [DbContext(typeof(WorklogContext))]
-    partial class WorklogContextModelSnapshot : ModelSnapshot
+    [Migration("20180630090613_ChangeTimeSpentType")]
+    partial class ChangeTimeSpentType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
