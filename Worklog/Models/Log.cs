@@ -30,6 +30,8 @@ namespace Worklog.Models
 		//ICollection<Project> Projects { get; set; }
 		//ICollection<WorkTask> Tasks { get; set; }
 		public Project Project { get; set; }
+
+		[Display(Name = "Task")]
 		public WorkTask WorkTask { get; set; }
     }
 }

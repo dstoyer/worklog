@@ -10,6 +10,7 @@ namespace Worklog.Models
     {
 		public int ProjectID { get; set; }
 
+		[Display(Name = "Project Name")]
 		[StringLength(60, MinimumLength = 3), Required]
 		public string ProjectName { get; set; }
 
