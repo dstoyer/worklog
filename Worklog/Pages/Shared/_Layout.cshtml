@@ -26,16 +26,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="Worklogs/Index" class="navbar-brand">Worklog</a>
+                <a asp-page="/Worklogs/Index" class="navbar-brand">Worklog</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/Create">Create Log</a></li>
-                    <li><a asp-page="Projects/Index">Projects</a></li>
-                    <li><a asp-page="Tasks/Index">Tasks</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="/Projects/Index">Projects</a></li>
+                    <li><a asp-page="/Tasks/Index">Tasks</a></li>
+                    @*<li><a asp-page="/About">About</a></li>
+                    <li><a asp-page="/Contact">Contact</a></li>*@
                 </ul>
             </div>
         </div>

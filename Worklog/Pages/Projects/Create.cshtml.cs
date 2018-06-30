@@ -33,8 +33,13 @@ namespace Worklog.Pages.Projects
                 return Page();
             }
 
-            _context.Project.Add(Project);
-            await _context.SaveChangesAsync();
+
+			bool contains = _context.Project.AsEnumerable().Any(row => Project.ProjectName.Equals(row.ProjectName));
+			if (!contains)
+			{
+				_context.Project.Add(Project);
+				await _context.SaveChangesAsync();
+			}
 
             return RedirectToPage("./Index");
         }

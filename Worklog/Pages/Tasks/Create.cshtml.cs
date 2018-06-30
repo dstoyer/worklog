@@ -32,9 +32,12 @@ namespace Worklog.Pages.Tasks
             {
                 return Page();
             }
-
-            _context.WorkTask.Add(WorkTask);
-            await _context.SaveChangesAsync();
+			bool contains = _context.WorkTask.AsEnumerable().Any(row => WorkTask.TaskName.Equals(row.TaskName));
+			if (!contains)
+			{
+				_context.WorkTask.Add(WorkTask);
+				await _context.SaveChangesAsync();
+			}
 
             return RedirectToPage("./Index");
         }
