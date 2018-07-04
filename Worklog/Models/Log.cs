@@ -17,7 +17,7 @@ namespace Worklog.Models
 		[Display(Name = "Date")]
 		[Required, DataType(DataType.Date)]
 		public DateTime LogDate { get; set; }
-		[Display(Name = "Time Spent")]
+		[Display(Name = "Time")]
 		public double TimeSpent { get; set; }
 
 		[Display(Name = "Title/Summary")]

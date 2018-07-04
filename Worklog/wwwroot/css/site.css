@@ -35,3 +35,46 @@ body {
         display: none;
     }
 }
+
+/* Table layout and formating */
+.log-list {
+	table-layout: fixed;
+	width: 100%;
+	white-space: nowrap;
+}
+
+/* Set table data */
+.log-list td, th {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Column widths will total 100% with the last column a set width to keep the edit/details/delete buttons in line */
+.col-date {
+	width: 7%;
+}
+
+.col-time {
+	width: 5%;
+}
+
+.col-title {
+	width: 25%;
+}
+
+.col-desc {
+	width: 25%;
+}
+
+.col-project {
+	width: 7%;
+}
+
+.col-task {
+	width: 5%;
+}
+
+.col-edit {
+	width: 40px;
+}
