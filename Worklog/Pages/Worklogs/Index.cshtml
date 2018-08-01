@@ -20,17 +20,17 @@
             <th class="col-time">
                 @Html.DisplayNameFor(model => model.Log[0].TimeSpent)
             </th>
-            <th class="col-title">
-                @Html.DisplayNameFor(model => model.Log[0].Title)
-            </th>
-            <th class="col-desc">
-                @Html.DisplayNameFor(model => model.Log[0].Description)
-            </th>
             <th class="col-project">
                 @Html.DisplayNameFor(model => model.Log[0].Project)
             </th>
             <th class="col-task">
                 @Html.DisplayNameFor(model => model.Log[0].WorkTask)
+            </th>
+            <th class="col-title">
+                @Html.DisplayNameFor(model => model.Log[0].Title)
+            </th>
+            <th class="col-desc">
+                @Html.DisplayNameFor(model => model.Log[0].Description)
             </th>
             <th class="col-edit"></th>
         </tr>
@@ -45,16 +45,16 @@
                 @Html.DisplayFor(modelItem => item.TimeSpent)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Project.ProjectName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.WorkTask.TaskName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.LogID">Edit</a> |
