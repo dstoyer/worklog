@@ -39,7 +39,8 @@
 			<div class="form-group">
 				<label asp-for="Log.Description" class="control-label"></label>
 @*				<input asp-for="Log.Description" class="create-form-control-desc" placeholder="Enter description ..." />*@
-				<textarea asp-for="Log.Description" id="editLogDescription" class="markdown" cols="70" rows="10" runat="server" placeholder="Enter description ..."></textarea>
+				@*<textarea asp-for="Log.Description" id="myMarkdown" class="form-control" cols="70" rows="10" runat="server" placeholder="Enter description ..."></textarea>*@
+				<textarea asp-for="Log.Description" id="workMarkdown" cols="70" rows="10" runat="server" placeholder="Enter description ..."></textarea>
 				<span asp-validation-for="Log.Description" class="text-danger"></span>
 			</div>
             <div class="form-group">

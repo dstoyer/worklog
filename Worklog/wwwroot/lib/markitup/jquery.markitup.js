@@ -36,8 +36,9 @@
 		options = {	id:						'',
 					nameSpace:				'',
 					root:					'',
-					previewHandler:			false,
-					previewInWindow:		'', // 'width=800, height=600, resizable=yes, scrollbars=yes'
+					previewHandler:			true,
+					previewInWindow:		'',
+					//previewInWindow:		'width=800, height=600, resizable=yes, scrollbars=yes' ,
 					previewInElement:		'',
 					previewAutoRefresh:		true,
 					previewPosition:		'after',
