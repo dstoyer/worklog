@@ -418,9 +418,10 @@
 				prepare(options.afterInsert);
 
 				// refresh preview if opened
-				if (previewWindow && options.previewAutoRefresh) {
-					refreshPreview(); 
-				}
+				//if (previewWindow && options.previewAutoRefresh) {
+				//	refreshPreview(); 
+				//}
+				refreshPreview();
 																									
 				// reinit keyevent
 				shiftKey = altKey = ctrlKey = abort = false;
