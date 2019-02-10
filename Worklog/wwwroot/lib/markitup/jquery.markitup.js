@@ -36,14 +36,16 @@
 		options = {	id:						'',
 					nameSpace:				'',
 					root:					'',
-					previewHandler:			true,
+					previewHandler:			false,
 					previewInWindow:		'',
 					//previewInWindow:		'width=800, height=600, resizable=yes, scrollbars=yes' ,
 					previewInElement:		'',
 					previewAutoRefresh:		true,
 					previewPosition:		'after',
 					previewTemplatePath:	'~/templates/preview.html',
-					previewParser:			false,
+					previewParser: function (data) {
+						return new showdown.Converter().makeHtml(data);
+					},
 					previewParserPath:		'',
 					previewParserVar:		'data',
 					resizeHandle:			true,

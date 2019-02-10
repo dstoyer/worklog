@@ -6,9 +6,9 @@
  */
 (function($) {
 	$.markItUp.plugin.add('markdownParser', {
-		scripts:['scripts/showdown.js'],
+		scripts: ['~\lib\markitup\sets\markdownparser\scripts\showdown.js'],
 		onBeforePreviewRefresh:function(miu) {
-			var showdown = new Showdown.converter();
+			var showdown = new Showdown.Converter();
 			miu.preview.content( showdown.makeHtml( miu.preview.content() ) );
 		}
 	});

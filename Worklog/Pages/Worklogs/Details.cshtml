@@ -2,54 +2,54 @@
 @model Worklog.Pages.Worklogs.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+	ViewData["Title"] = "Details";
 }
 
 <h2>Details</h2>
 
 <div>
-    <h4>Log</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Log.LogDate)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Log.LogDate)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Log.TimeSpent)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Log.TimeSpent)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Log.Title)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Log.Title)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Log.Description)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Log.Description)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Log.Project)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Log.Project.ProjectName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Log.WorkTask)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Log.WorkTask.TaskName)
-        </dd>
-    </dl>
+	<h4>Log</h4>
+	<hr />
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.Log.LogDate)
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Log.LogDate)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.Log.TimeSpent)
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Log.TimeSpent)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.Log.Title)
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Log.Title)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.Log.Description)
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Log.Description)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.Log.Project)
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Log.Project.ProjectName)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.Log.WorkTask)
+		</dt>
+		<dd>
+			@Html.DisplayFor(model => model.Log.WorkTask.TaskName)
+		</dd>
+	</dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Log.LogID">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+	<a asp-page="./Edit" asp-route-id="@Model.Log.LogID">Edit</a> |
+	<a asp-page="./Index">Back to List</a>
 </div>

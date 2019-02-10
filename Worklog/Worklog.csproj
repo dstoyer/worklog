@@ -5,6 +5,89 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\lib\markitup\sets\markdownparser\**" />
+    <Content Remove="wwwroot\lib\markitup\sets\markdownparser\**" />
+    <EmbeddedResource Remove="wwwroot\lib\markitup\sets\markdownparser\**" />
+    <None Remove="wwwroot\lib\markitup\sets\markdownparser\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\showdown-1.9.0\bin\showdown.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\bin\showdown.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\CHANGELOG.md" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\CONTRIBUTING.md" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\CREDITS.md" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\dist\showdown.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\dist\showdown.js.map" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\dist\showdown.min.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\dist\showdown.min.js.map" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\DONATIONS.md" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\README.md" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\cli\cli.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\cli\makehtml.cmd.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\cli\messenger.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\converter.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\helpers.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\loader.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\options.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\showdown.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\anchors.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\autoLinks.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\blockGamut.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\blockQuotes.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\codeBlocks.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\codeSpans.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\completeHTMLDocument.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\detab.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\ellipsis.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\emoji.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\encodeAmpsAndAngles.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\encodeBackslashEscapes.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\encodeCode.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\escapeSpecialCharsWithinTagAttributes.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\githubCodeBlocks.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\hashBlock.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\hashCodeTags.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\hashElement.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\hashHTMLBlocks.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\hashHTMLSpans.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\hashPreCodeTags.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\headers.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\horizontalRule.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\images.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\italicsAndBold.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\lists.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\blockquote.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\codeBlock.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\codeSpan.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\emphasis.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\header.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\hr.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\image.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\links.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\list.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\listItem.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\node.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\paragraph.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\pre.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\strikethrough.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\strong.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\table.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\tableCell.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\makeMarkdown\txt.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\metadata.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\outdent.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\paragraphs.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\runExtension.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\spanGamut.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\strikethrough.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\stripLinkDefinitions.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\tables.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\underline.js" />
+    <None Include="wwwroot\lib\showdown-complete-1.9.0\src\subParsers\unescapeSpecialChars.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
   </ItemGroup>
