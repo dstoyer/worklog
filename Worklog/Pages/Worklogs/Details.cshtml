@@ -32,7 +32,7 @@
 		<dt>
 			@Html.DisplayNameFor(model => model.Log.Description)
 		</dt>
-		<dd>
+		<dd id="detailDescription">
 			@Html.DisplayFor(model => model.Log.Description)
 		</dd>
 		<dt>
@@ -52,4 +52,5 @@
 <div>
 	<a asp-page="./Edit" asp-route-id="@Model.Log.LogID">Edit</a> |
 	<a asp-page="./Index">Back to List</a>
+	@*<script type="text/javascript" src="~/lib/showdown-complete-1.9.0/dist/convertmdtohtml.js"></script>*@
 </div>

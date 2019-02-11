@@ -177,7 +177,8 @@
 				}
 
 				// listen key events
-				$$.bind('keydown.markItUp', keyPressed).bind('keyup', keyPressed);
+				$$.bind('keydown.markItUp', keyPressed).bind('keydown', keyPressed);
+				$$.bind('keyup.markItup', keyUnPressed).bind('keyup', keyUnPressed);
 				
 				// bind an event to catch external calls
 				$$.bind("insertion.markItUp", function(e, settings) {
@@ -418,10 +419,9 @@
 				prepare(options.afterInsert);
 
 				// refresh preview if opened
-				//if (previewWindow && options.previewAutoRefresh) {
-				//	refreshPreview(); 
-				//}
-				refreshPreview();
+				if (previewWindow && options.previewAutoRefresh) {
+					refreshPreview(); 
+				}
 																									
 				// reinit keyevent
 				shiftKey = altKey = ctrlKey = abort = false;
@@ -587,6 +587,13 @@
 					previewWindow.document.documentElement.scrollTop = sp;
 				}
 			}
+
+			// refresh the preview after key up
+			function keyUnPressed(e) {
+				if (e.type === 'keyup') {
+					refreshPreview();
+				}
+			}
 			
 			// set keys pressed
 			function keyPressed(e) { 
@@ -636,6 +643,8 @@
 					}
 				}
 			}
+
+
 
 			function remove() {
 				$$.unbind(".markItUp").removeClass('markItUpEditor');
