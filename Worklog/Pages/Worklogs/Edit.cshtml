@@ -16,27 +16,27 @@
             <input type="hidden" asp-for="Log.LogID" />
             <div class="form-group">
                 <label asp-for="Log.ProjectID" class="control-label"></label>
-                <select asp-for="Log.ProjectID" class="form-control" asp-items="ViewBag.ProjectID"></select>
+                <select asp-for="Log.ProjectID" class="form-control text-date-time-width" asp-items="ViewBag.ProjectID"></select>
                 <span asp-validation-for="Log.ProjectID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Log.WorkTaskID" class="control-label"></label>
-                <select asp-for="Log.WorkTaskID" class="form-control" asp-items="ViewBag.WorkTaskID"></select>
+                <select asp-for="Log.WorkTaskID" class="form-control text-date-time-width" asp-items="ViewBag.WorkTaskID"></select>
                 <span asp-validation-for="Log.WorkTaskID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Log.LogDate" class="control-label"></label>
-                <input asp-for="Log.LogDate" class="form-control" placeholder="Enter date ..." />
+                <input asp-for="Log.LogDate" class="form-control text-date-time-width" placeholder="Enter date ..." />
                 <span asp-validation-for="Log.LogDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Log.TimeSpent" class="control-label"></label>
-                <input asp-for="Log.TimeSpent" class="form-control" placeholder="Enter hours (e.g. 1.5)" />
+                <input asp-for="Log.TimeSpent" class="form-control text-date-time-width" placeholder="Enter hours (e.g. 1.5)" />
                 <span asp-validation-for="Log.TimeSpent" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Log.Title" class="control-label"></label>
-                <input asp-for="Log.Title" class="form-control" />
+                <input asp-for="Log.Title" class="form-control title-width" />
                 <span asp-validation-for="Log.Title" class="text-danger"></span>
             </div>
             <div class="form-group">

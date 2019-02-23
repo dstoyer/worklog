@@ -15,25 +15,25 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Log.ProjectID" class="control-label"></label>
-                <select asp-for="Log.ProjectID" class ="create-form-control" asp-items="ViewBag.ProjectID"></select>
+                <select asp-for="Log.ProjectID" class ="form-control text-date-time-width" asp-items="ViewBag.ProjectID"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Log.WorkTaskID" class="control-label"></label>
-                <select asp-for="Log.WorkTaskID" class ="create-form-control" asp-items="ViewBag.WorkTaskID"></select>
+                <select asp-for="Log.WorkTaskID" class ="form-control text-date-time-width" asp-items="ViewBag.WorkTaskID"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Log.LogDate" class="control-label"></label>
-                <input asp-for="Log.LogDate" class="create-form-control" />
+                <input asp-for="Log.LogDate" class="form-control text-date-time-width" />
                 <span asp-validation-for="Log.LogDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Log.TimeSpent" class="control-label"></label>
-                <input asp-for="Log.TimeSpent" class="create-form-control" placeholder="Time spent ..." />
+                <input asp-for="Log.TimeSpent" class="form-control text-date-time-width" placeholder="Time spent ..." />
                 <span asp-validation-for="Log.TimeSpent" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Log.Title" class="control-label"></label>
-                <input asp-for="Log.Title" class="create-form-control-title" placeholder="Enter title ..." />
+                <input asp-for="Log.Title" class="form-control title-width" placeholder="Enter title ..." />
                 <span asp-validation-for="Log.Title" class="text-danger"></span>
             </div>
 			<div class="form-group">
