@@ -6,17 +6,41 @@ using System.Threading.Tasks;
 
 namespace Worklog.Models
 {
-    public class Log
-    {
+	public class Log
+	{
+		public Log() { }
+
+		public Log(
+			int logID,
+			int projectID,
+			int workTaskID,
+			DateTime logDate,
+			double timeSpent,
+			string title,
+			string description
+		) {
+			LogID = logID;
+			ProjectID = ProjectID;
+			WorkTaskID = workTaskID;
+			LogDate = logDate;
+			TimeSpent = timeSpent;
+			Title = title;
+			Description = description;
+		}
+
+
 		public int LogID { get; set; }
+
 		[Display(Name = "Project Name")]
 		public int ProjectID { get; set; }
+
 		[Display(Name = "Task Name")]
 		public int WorkTaskID { get; set; }
 
 		[Display(Name = "Date")]
 		[Required, DataType(DataType.Date)]
 		public DateTime LogDate { get; set; }
+
 		[Display(Name = "Time")]
 		public double TimeSpent { get; set; }
 
@@ -27,8 +51,6 @@ namespace Worklog.Models
 		[StringLength(1200, MinimumLength = 0)]
 		public string Description { get; set; }
 
-		//ICollection<Project> Projects { get; set; }
-		//ICollection<WorkTask> Tasks { get; set; }
 		public Project Project { get; set; }
 
 		[Display(Name = "Task")]
